@@ -1,0 +1,65 @@
+.continercm{
+    border: 2px solid black;
+    background-color: black;
+    height: 400px;
+    width: 100%;
+    margin-bottom: 20%;
+    position: relative;
+} 
+.blackcm{
+    opacity: 0;
+    margin-top: 260px; 
+    margin-left: 40%;
+    transform: translate(30px,30px);
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-name: blockcm;
+    animation-fill-mode: forwards;
+    position: sticky;
+}
+@keyframes blockcm {
+    from{
+        opacity: 1;
+        margin-top: 260px; 
+        margin-left: 40%;
+    }
+    to{
+        opacity: 1;
+        margin-top: 120px;
+        margin-left: 40%;
+    }
+}
+.arrivcm{
+ color: white;
+ font-size: 56px;
+}
+.con2cm{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.conbtncm{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+.arrowacm{
+    color: rgba(253, 188, 66, 0.774);
+    margin-top: 6px;
+    margin-left: 1%;
+}
+.newcm{
+    color: white;
+    margin-top: 6px;
+    margin-left: 1%;
+}
+.con2cm{
+    margin-top: 2%;
+}
+
+
+
+
+
+
+

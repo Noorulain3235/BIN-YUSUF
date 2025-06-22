@@ -1,0 +1,53 @@
+.main0{
+    height: 300px;
+    width: 80%;
+    margin-top: 5%;
+    margin-left: 10%;
+ display: flex;
+ flex-direction: column;
+ flex-wrap: wrap;
+}
+.box01, .box02, .box03, .box04{
+    position: relative;
+    height: 298px;
+    width: 23%;
+}
+.sf01, .sf02, .sf03, .sf04{
+    height: 296px;
+    width: 100%;
+    opacity: 0.5;
+}
+.inbox01, .inbox02, .inbox03, .inbox04{
+    height: 290px;
+    width: 100%;
+    position: absolute;
+    top: 0%;
+}
+.inbox01:hover, .inbox02:hover , .inbox03:hover, .inbox04:hover{
+     width: 100%;
+    top: 0%;
+    margin-left: 20%;
+}
+.hdg01, .hdg02, .hdg03, .hdg04{
+    position: absolute;
+    margin-top: 150px;
+    color: black;
+    margin-left: 6%;
+}
+.btn01, .btn02, .btn03, .btn04{
+    position: absolute;
+    margin-top: 190px;
+    margin-left: 6%;
+    border: 2px solid rgba(253, 188, 66, 0.774);
+    color: white;
+    background-color: rgba(253, 188, 66, 0.774);
+    font-weight: bold;
+    height: 40px;
+    width: 40%;
+    border-radius: 0px;
+}
+.btn01:hover, .btn02:hover, .btn03:hover, .btn04:hover{
+    border: 2px solid black;
+    background-color: black;
+}
+

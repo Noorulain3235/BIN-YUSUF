@@ -1,0 +1,588 @@
+.App {
+    background-color:rgba(253, 188, 66, 0.774);
+    height: 50px;
+    display: flex;
+    align-items: baseline;
+}
+.telephone{
+    height: 20px;
+    margin-top: 11px;
+    margin-left: 10%;
+}
+.number01{
+    margin-left: 2px;
+    font-size: 15px;
+}
+.para{
+    margin-left: 15%;
+}
+.facebook1{
+    height: 25px;
+    margin-left: 30%;
+}
+.name{
+    font-size: 27px;
+}
+.home{
+    font-size: 18px;
+    position: relative;
+    color: black;
+}
+.home:after{
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 3px;
+    width: 0;
+    left: 0;
+   bottom: -10px;
+   transition: .3s;
+  
+}
+.home:hover:after{
+    width: 100%;
+}
+.home:hover {
+    color:rgba(253, 188, 66, 0.774) ; 
+}
+  
+.home:hover:after {
+    width: 100%;
+    background-color:black;
+}
+.arrival1{
+    font-size: 18px;
+    position: relative;
+    color: black;
+}
+.arrival1:after{
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 3px;
+    width: 0;
+    left: 0;
+   bottom: -10px;
+   transition: .3s;
+  
+}
+.arrival1:hover:after{
+    width: 100%;
+}
+.arrival1:hover {
+    color:rgba(253, 188, 66, 0.774) ; 
+}
+  
+.arrival1:hover:after {
+    width: 100%;
+    background-color:black;
+}
+.casual{
+    font-size: 18px;
+    position: relative;
+    color: black;
+}
+.casual:after{
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 3px;
+    width: 0;
+    left: 0;
+   bottom: -10px;
+   transition: .3s;
+  
+}
+.casual:hover:after{
+    width: 100%;
+}
+.casual:hover {
+    color:rgba(253, 188, 66, 0.774) ; 
+}
+  
+.casual:hover:after {
+    width: 100%;
+    background-color:black;
+}
+.maxi{
+    font-size: 18px;
+    position: relative;
+    color: black;
+}
+.maxi:after{
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 3px;
+    width: 0;
+    left: 0;
+   bottom: -10px;
+   transition: .3s;
+  
+}
+.maxi:hover:after{
+    width: 100%;
+}
+.maxi:hover {
+    color:rgba(253, 188, 66, 0.774) ; 
+}
+  
+.maxi:hover:after {
+    width: 100%;
+    background-color:black;
+}
+.formal{
+    font-size: 18px;
+    position: relative;
+    color: black;
+}
+.formal:after{
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 3px;
+    width: 0;
+    left: 0;
+   bottom: -10px;
+   transition: .3s;
+  
+}
+.formal:hover:after{
+    width: 100%;
+}
+.formal:hover {
+    color:rgba(253, 188, 66, 0.774) ; 
+}
+  
+.formal:hover:after {
+    width: 100%;
+    background-color:black;
+}
+.party{
+    font-size: 18px;
+    position: relative;
+    color: black;
+}
+.party:after{
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 3px;
+    width: 0;
+    left: 0;
+   bottom: -10px;
+   transition: .3s;
+  
+}
+.party:hover:after{
+    width: 100%;
+}
+.party:hover {
+    color:rgba(253, 188, 66, 0.774) ; 
+}
+  
+.party:hover:after {
+    width: 100%;
+    background-color:black;
+}
+.winter{
+    font-size: 18px;
+    position: relative;
+    color: black;
+}
+.winter:after{
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 3px;
+    width: 0;
+    left: 0;
+   bottom: -10px;
+   transition: .3s;
+  
+}
+.winter:hover:after{
+    width: 100%;
+}
+.winter:hover {
+    color:rgba(253, 188, 66, 0.774) ; 
+}
+  
+.winter:hover:after {
+    width: 100%;
+    background-color:black;
+}
+.shawl{
+    font-size: 18px;
+    position: relative;
+    color: black;
+}
+.shawl:after{
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 3px;
+    width: 0;
+    left: 0;
+   bottom: -10px;
+   transition: .3s;
+  
+}
+.shawl:hover:after{
+    width: 100%;
+}
+.shawl:hover {
+    color:rgba(253, 188, 66, 0.774) ; 
+}
+  
+.shawl:hover:after {
+    width: 100%;
+    background-color:black;
+}
+.diary{
+    font-size: 18px;
+    position: relative;
+    color: black;
+}
+.diary:after{
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 3px;
+    width: 0;
+    left: 0;
+   bottom: -10px;
+   transition: .3s;
+  
+}
+.diary:hover:after{
+    width: 100%;
+}
+.diary:hover {
+    color:rgba(253, 188, 66, 0.774) ; 
+}
+  
+.diary:hover:after {
+    width: 100%;
+    background-color:black;
+}
+.contact{
+    font-size: 18px;
+    position: relative;
+    color: black;
+}
+.contact:after{
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 3px;
+    width: 0;
+    left: 0;
+   bottom: -10px;
+   transition: .3s;
+  
+}
+.contact:hover:after{
+    width: 100%;
+}
+.contact:hover {
+    color:rgba(253, 188, 66, 0.774) ; 
+}
+  
+.contact:hover:after {
+    width: 100%;
+    background-color:black;
+}
+  
+  
+  
+  
+  
+/* @media screen and (min-width:400px) and (max-width:700px) {
+    .App {
+        background-color:rgba(253, 188, 66, 0.774);
+        height: 60px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+    }
+    .telephone{
+        height: 40px;
+        margin-left: 5%;
+    }
+    .number{
+        font-size: 10px;
+        top: 5%;
+    }
+    .para{
+        margin-top: 15%;
+    }
+    .facebook1{
+        height: 12px;
+        margin-left: 2%;
+    }
+    .name{
+        font-size: 20px;
+    }
+    .home{
+        font-size: 10px;
+        position: relative;
+    }
+    .home:after{
+        content: "";
+        position: absolute;
+        background-color: black;
+        height: 3px;
+        width: 0;
+        left: 0;
+       bottom: -10px;
+       transition: .3s;
+      
+    }
+    .home:hover:after{
+        width: 100%;
+    }
+    .home:hover {
+        color:rgba(253, 188, 66, 0.774) ; 
+    }
+      
+    .home:hover:after {
+        width: 100%;
+        background-color:black;
+    }
+    .arrival1{
+        font-size: 18px;
+        position: relative;
+    }
+    .arrival1:after{
+        content: "";
+        position: absolute;
+        background-color: black;
+        height: 3px;
+        width: 0;
+        left: 0;
+       bottom: -10px;
+       transition: .3s;
+      
+    }
+    .arrival1:hover:after{
+        width: 100%;
+    }
+    .arrival1:hover {
+        color:rgba(253, 188, 66, 0.774) ; 
+    }
+      
+    .arrival1:hover:after {
+        width: 100%;
+        background-color:black;
+    }
+    .casual{
+        font-size: 18px;
+        position: relative;
+    }
+    .casual:after{
+        content: "";
+        position: absolute;
+        background-color: black;
+        height: 3px;
+        width: 0;
+        left: 0;
+       bottom: -10px;
+       transition: .3s;
+      
+    }
+    .casual:hover:after{
+        width: 100%;
+    }
+    .casual:hover {
+        color:rgba(253, 188, 66, 0.774) ; 
+    }
+      
+    .casual:hover:after {
+        width: 100%;
+        background-color:black;
+    }
+    .maxi{
+        font-size: 18px;
+        position: relative;
+    }
+    .maxi:after{
+        content: "";
+        position: absolute;
+        background-color: black;
+        height: 3px;
+        width: 0;
+        left: 0;
+       bottom: -10px;
+       transition: .3s;
+      
+    }
+    .maxi:hover:after{
+        width: 100%;
+    }
+    .maxi:hover {
+        color:rgba(253, 188, 66, 0.774) ; 
+    }
+      
+    .maxi:hover:after {
+        width: 100%;
+        background-color:black;
+    }
+    .formal{
+        font-size: 18px;
+        position: relative;
+    }
+    .formal:after{
+        content: "";
+        position: absolute;
+        background-color: black;
+        height: 3px;
+        width: 0;
+        left: 0;
+       bottom: -10px;
+       transition: .3s;
+      
+    }
+    .formal:hover:after{
+        width: 100%;
+    }
+    .formal:hover {
+        color:rgba(253, 188, 66, 0.774) ; 
+    }
+      
+    .formal:hover:after {
+        width: 100%;
+        background-color:black;
+    }
+    .party{
+        font-size: 18px;
+        position: relative;
+    }
+    .party:after{
+        content: "";
+        position: absolute;
+        background-color: black;
+        height: 3px;
+        width: 0;
+        left: 0;
+       bottom: -10px;
+       transition: .3s;
+      
+    }
+    .party:hover:after{
+        width: 100%;
+    }
+    .party:hover {
+        color:rgba(253, 188, 66, 0.774) ; 
+    }
+      
+    .party:hover:after {
+        width: 100%;
+        background-color:black;
+    }
+    .winter{
+        font-size: 18px;
+        position: relative;
+    }
+    .winter:after{
+        content: "";
+        position: absolute;
+        background-color: black;
+        height: 3px;
+        width: 0;
+        left: 0;
+       bottom: -10px;
+       transition: .3s;
+      
+    }
+    .winter:hover:after{
+        width: 100%;
+    }
+    .winter:hover {
+        color:rgba(253, 188, 66, 0.774) ; 
+    }
+      
+    .winter:hover:after {
+        width: 100%;
+        background-color:black;
+    }
+    .shawl{
+        font-size: 18px;
+        position: relative;
+    }
+    .shawl:after{
+        content: "";
+        position: absolute;
+        background-color: black;
+        height: 3px;
+        width: 0;
+        left: 0;
+       bottom: -10px;
+       transition: .3s;
+      
+    }
+    .shawl:hover:after{
+        width: 100%;
+    }
+    .shawl:hover {
+        color:rgba(253, 188, 66, 0.774) ; 
+    }
+      
+    .shawl:hover:after {
+        width: 100%;
+        background-color:black;
+    }
+    .diary{
+        font-size: 18px;
+        position: relative;
+    }
+    .diary:after{
+        content: "";
+        position: absolute;
+        background-color: black;
+        height: 3px;
+        width: 0;
+        left: 0;
+       bottom: -10px;
+       transition: .3s;
+      
+    }
+    .diary:hover:after{
+        width: 100%;
+    }
+    .diary:hover {
+        color:rgba(253, 188, 66, 0.774) ; 
+    }
+      
+    .diary:hover:after {
+        width: 100%;
+        background-color:black;
+    }
+    .contact{
+        font-size: 18px;
+        position: relative;
+    }
+    .contact:after{
+        content: "";
+        position: absolute;
+        background-color: black;
+        height: 3px;
+        width: 0;
+        left: 0;
+       bottom: -10px;
+       transition: .3s;
+      
+    }
+    .contact:hover:after{
+        width: 100%;
+    }
+    .contact:hover {
+        color:rgba(253, 188, 66, 0.774) ; 
+    }
+      
+    .contact:hover:after {
+        width: 100%;
+        background-color:black;
+    }  
+}  */
