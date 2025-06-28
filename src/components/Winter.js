@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Calendar, Mail, Bell, Snowflake } from 'lucide-react';
-import './Winter.css'; // Importing custom CSS class utilities
+import { Link } from 'react-router-dom';
+import './Winter.css';
 
 export default function WinterCollectionPage() {
   const [email, setEmail] = useState('');
@@ -45,7 +46,7 @@ export default function WinterCollectionPage() {
               </div>
               <div className="hero-image-wrapper">
                 <div className="image-box">
-                  <img src="/images/luxecat.webp" alt="Winter Collection Preview" className="preview-image" />
+                  <img src={`${process.env.PUBLIC_URL}/images/luxecat.webp`} alt="Winter Collection Preview" className="preview-image" />
                 </div>
               </div>
             </div>
@@ -60,23 +61,23 @@ export default function WinterCollectionPage() {
               {
                 title: 'Premium Winter Coats',
                 desc: 'Our new line of insulated winter coats combines fashion with function. Stay warm without compromising on style.',
-                image: '/images/images (3).jpeg',
+                image: 'images/images (3).jpeg',
               },
               {
                 title: 'Cozy Accessories',
                 desc: 'Complete your winter look with our matching accessories. Scarves, gloves, and hats designed for maximum comfort.',
-                image: '/images/WFM34629.webp',
+                image: 'images/WFM34629.webp',
               },
               {
                 title: 'Winter Footwear',
                 desc: 'Step confidently through snow and ice with our waterproof, insulated boots that provide both grip and style.',
-                image: '/images/download (1).jpeg',
+                image: 'images/download (1).jpeg',
               },
             ].map((item, i) => (
               <div className="card" key={i}>
                 <div className="card-content">
                   <div className="card-image-box">
-                    <img src={item.image} alt={item.title} className="card-image" />
+                    <img src={`${process.env.PUBLIC_URL}/${item.image}`} alt={item.title} className="card-image" />
                   </div>
                   <h3 className="card-title">{item.title}</h3>
                   <p className="card-desc">{item.desc}</p>
@@ -105,9 +106,9 @@ export default function WinterCollectionPage() {
                     onChange={(e) => setEmail(e.target.value)}
                     className="input-email"
                   />
-                  <button onClick={handleSubmit} className="button-submit">
-                    Notify Me
-                  </button>
+                  <Link to="/Winter" className="button-submit" onClick={handleSubmit}>
+                    Winter
+                  </Link>
                 </div>
               ) : (
                 <div className="subscribed-box">

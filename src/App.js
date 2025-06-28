@@ -1,4 +1,3 @@
-import React from 'react';
 import './App.css';
 import Mynavbar from './components/Mynavbar';
 import Allstyle from './components/Allstyle';
@@ -11,31 +10,26 @@ import Partybtn from './components/Partybtn';
 import Party from './components/Party';
 import Maxishow from './components/Maxishow';
 import Foot from './components/Foot';
-import { Routes, Route, BrowserRouter } from 'react-router-dom';
+import { Routes, Route,HashRouter  } from 'react-router-dom';
 import Arrivalpage from './components/Arrivalpage';
 import Casualpage from './components/Casualpage';
 import Maxipage from './components/Maxipage';
 import Semipage from './components/Semipage';
 import Partypage from './components/Partypage';
 import Cart from './components/Cart';
-import Zoom1 from './components/Zoom1';
-import Zoom2 from './components/Zoom2';
-import Zoom3 from './components/Zoom3';
-import Zoom4 from './components/Zoom4';
-import Zoom5 from './components/Zoom5';
-import Zoom6 from './components/Zoom6';
-import Zoom7 from './components/Zoom7';
-import Zoom8 from './components/Zoom8';
 import Customer from './components/Customer';
 import ContactPage from './components/ContactPage';
 import Winter from './components/Winter';
+import Aboutus from './components/Aboutus';
 
 
 // Home component to display your main content
 const Home = () => {
   return (
     <>
-      <img src="/images/frontimg.png" alt="" className='frontimg' width="100%" />
+      {/* <img src="/images/frontimg.png" alt="" className='frontimg' width="100%" /> */}
+      <img src={`${process.env.PUBLIC_URL}/images/frontimg.png`} alt="Front" width="100%" className="frontimg" />
+
       <Allstyle />
       <Arrival />
       <Semibtn />
@@ -51,7 +45,8 @@ const Home = () => {
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
+
       <div>
         <Mynavbar />
         <Routes>
@@ -62,21 +57,15 @@ function App() {
           <Route path="/Semipage" element={<Semipage />} />
           <Route path="/Partypage" element={<Partypage />} />
           <Route path="/Cart" element={<Cart />} />
-          <Route path="/Zoom1" element={<Zoom1 />} />
-          <Route path="/Zoom2" element={<Zoom2 />} />
-          <Route path="/Zoom3" element={<Zoom3 />} />
-          <Route path="/Zoom4" element={<Zoom4 />} />
-          <Route path="/Zoom5" element={<Zoom5 />} />
-          <Route path="/Zoom6" element={<Zoom6 />} />
-          <Route path="/Zoom7" element={<Zoom7 />} />
-          <Route path="/Zoom8" element={<Zoom8 />} />
           <Route path="/Customer" element={<Customer />} />
           <Route path="/ContactPage" element={<ContactPage />} />
           <Route path="/Winter" element={<Winter />} />
+          <Route path="/Aboutus" element={<Aboutus />} />
         </Routes>
         <Foot />
       </div>
-    </BrowserRouter>
+    </HashRouter>
+
   );
 }
 

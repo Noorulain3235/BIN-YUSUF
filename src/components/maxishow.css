@@ -1,88 +1,80 @@
-.semibtnx{
-    margin-top: 10%;
-    margin-left: 5%;
-    height: 70px;
-    width: 90%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  .buttonx{
-    height: 40px;
-    width: 12%;
-    border: 2px solid rgba(253, 188, 66, 0.774);
-    background-color:rgba(253, 188, 66, 0.774) ;
-    color: white;
-    font-weight: bold;
-    border-radius: 0;
-    margin-top: 1%;
-    margin-left: 65%;
-  }
-  .buttonx:hover{
-    background-color: black;
-    border: 2px solid black;
-    border-radius: 0;
-  }
-.mainx{
-    height: 450px;
-    width: 85%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    margin-top: 3%;
-    margin-left: 8%;
-  }
-  .arr1x{
-    margin-left: 2%;
-    transition: 1.1s all;
-    cursor: pointer;
-  }
-  .arr1x:hover{
-    box-shadow:3px 3px 7px 5px rgb(184, 183, 183);
-    
-  }
-  .heading1x{
-    margin-left: 22%;
-  }
-  .rs1x{
-    margin-left: 35%;
-    color:rgba(253, 188, 66, 0.774) ;
-  }
-  .btn1x{
-    border: none;
-    border-radius: 0;
-    background-color:rgba(253, 188, 66, 0.774) ;
-    color: white;
-    margin-left: 30%;
-    font-weight: bold;
-  }
-  .btn1x:hover{
-   background-color: black;
-  }
-  .arr2x{
-    margin-left: 2%;
-    transition: 1.1s all;
-    cursor: pointer;
-  }
-  .arr2x:hover{
-    box-shadow:3px 3px 7px 5px rgb(184, 183, 183);
-    
-  }
-  .heading2x{
-    margin-left: 27%;
-  }
-  .rs2x{
-    margin-left: 35%;
-    color:rgba(253, 188, 66, 0.774) ;
-  }
-  .btn2x{
-    border: none;
-    border-radius: 0;
-    background-color:rgba(253, 188, 66, 0.774) ;
-    color: white;
-    margin-left: 30%;
-    font-weight: bold;
-  }
-  .btn2x:hover{
-   background-color: black;
-  }
+.semibtnx {
+  margin-top: 5%;
+  margin-left: 5%;
+  height: 70px;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.buttonx {
+  height: 40px;
+  width: 12%;
+  border: 2px solid rgba(253, 188, 66, 0.774);
+  background-color: rgba(253, 188, 66, 0.774);
+  color: white;
+  font-weight: bold;
+  border-radius: 0;
+  margin-top: 1%;
+  margin-left: 78%;
+  text-decoration: none;
+  text-align: center;
+  align-content: center;
+}
+
+.buttonx:hover {
+  background-color: black;
+  border: 2px solid black;
+  border-radius: 0;
+}
+
+.mainx {
+  height: 450px;
+  width: 85%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-top: 3%;
+  margin-left: 8%;
+}
+
+/* Cards */
+.arr1x, .arr2x {
+  margin-left: 2%;
+  transition: 1.1s all;
+  cursor: pointer;
+}
+
+.arr1x:hover, .arr2x:hover {
+  box-shadow: 3px 3px 7px 5px rgb(184, 183, 183);
+}
+
+/* Headings */
+.heading1x { margin-left: 22%; }
+.heading2x { margin-left: 27%; }
+
+/* Prices */
+.rs1x, .rs2x {
+  margin-left: 35%;
+  color: rgba(253, 188, 66, 0.774);
+}
+
+/* Buttons */
+.btn1x, .btn2x {
+  border: none;
+  border-radius: 0;
+  background-color: rgba(253, 188, 66, 0.774);
+  color: white;
+  margin-left: 30%;
+  font-weight: bold;
+  text-decoration: none;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.btn1x:hover, .btn2x:hover {
+  background-color: black;
+}

@@ -1,19 +1,21 @@
 import React from 'react';
 import './partybtn.css';
-import Button from 'react-bootstrap/Button';
+import { Link } from 'react-router-dom'; // Use Link instead of Button
 
 const Partybtn = () => {
   return (
     <div>
-        <div className='semibtnp'>
-         <h1 className='semip'>Party Wear</h1>
-         <Button href="/Partypage" className='buttonp'>Veiw More<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi       bi-arrow-right-short" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/>
-           </svg>
-          </Button>
-        </div>
+      <div className='semibtnp'>
+        <h1 className='semip'>Party Wear</h1>
+        <Link to="/Partypage" className='buttonp'>
+          View More
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" className="bi bi-arrow-right-short" viewBox="0 0 16 16">
+            <path fillRule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+          </svg>
+        </Link>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Partybtn
+export default Partybtn;

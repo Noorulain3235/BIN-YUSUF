@@ -5,7 +5,7 @@ import './cart.css';
 const Cert = () => {
   return (
       <div>
-           <h1 className='carth'>Cart</h1>
+           {/* <h1 className='carth'>Cart</h1> */}
          <div className='continercm2'>
              <div className='blackcm2'>
                  <div className='con1cm2'>
@@ -34,7 +34,7 @@ const Cert = () => {
                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x-lg  cross" viewBox="0 0 16 16">
                          <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
                       </svg>
-                      <img src="/images/arr5.jpeg" alt="" className='img23' />
+                      {/* <img src="/images/arr5.jpeg" alt="" className='img23' /> */}
                       <p className='para25'>Bin Clothes</p>
                       <p className='para26'>Rs8,750.00</p>
                       <input type="number" id="quantity_66975318cb84b" className="input-text qty text  numb" name="cart[cede2d63a7c04ebd4cb55a2228c7141a][qty]"

@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { Star, User, Calendar, MessageSquare, Edit3 } from 'lucide-react';
 
-// Sample initial review data
 const initialReviews = [
   {
     id: 1,
@@ -44,7 +43,6 @@ export default function CustomerReviewPage() {
   const [filter, setFilter] = useState('all');
   const [showForm, setShowForm] = useState(false);
 
-  // Handle form input changes
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setNewReview(prev => ({
@@ -53,7 +51,6 @@ export default function CustomerReviewPage() {
     }));
   };
 
-  // Handle rating selection
   const handleRatingChange = (rating) => {
     setNewReview(prev => ({
       ...prev,
@@ -61,7 +58,6 @@ export default function CustomerReviewPage() {
     }));
   };
 
-  // Handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
     const newReviewWithDetails = {
@@ -69,7 +65,7 @@ export default function CustomerReviewPage() {
       id: reviews.length + 1,
       date: new Date().toISOString().split('T')[0]
     };
-    
+
     setReviews([newReviewWithDetails, ...reviews]);
     setNewReview({
       name: '',
@@ -81,17 +77,15 @@ export default function CustomerReviewPage() {
     setShowForm(false);
   };
 
-  // Filter reviews by rating
-  const filteredReviews = filter === 'all' 
-    ? reviews 
+  const filteredReviews = filter === 'all'
+    ? reviews
     : reviews.filter(review => review.rating === parseInt(filter));
 
-  // Render stars for ratings
   const renderStars = (rating) => {
     return Array(5).fill(0).map((_, index) => (
-      <Star 
-        key={index} 
-        size={16} 
+      <Star
+        key={index}
+        size={16}
         className={index < rating ? "fill-yellow-400 text-yellow-400" : "text-gray-300"}
       />
     ));
@@ -102,8 +96,7 @@ export default function CustomerReviewPage() {
       {/* Header */}
       <header className="bg-white">
         <div className="max-w-7xl mx-auto px-4 py-6 sm:px-6 lg:px-8">
-        <h1 className="text-3xl font-bold text-gray-900 text-center">Customer Reviews & Style Diary</h1>
-
+          <h1 className="text-3xl font-bold text-gray-900 text-center">Customer Reviews & Style Diary</h1>
           <p className="mt-2 text-gray-600 text-center">See what our customers are saying about their purchases</p>
         </div>
       </header>
@@ -118,7 +111,7 @@ export default function CustomerReviewPage() {
               <button
                 onClick={() => setFilter('all')}
                 className={`px-4 py-2 rounded-full text-sm font-medium ${
-                  filter === 'all' ? 'bg-indigo-600 text-white' : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
+                  filter === 'all' ? 'bg-[rgba(253,188,66,0.774)] text-black' : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
                 }`}
               >
                 All Reviews
@@ -128,7 +121,7 @@ export default function CustomerReviewPage() {
                   key={rating}
                   onClick={() => setFilter(rating.toString())}
                   className={`px-4 py-2 rounded-full text-sm font-medium ${
-                    filter === rating.toString() ? 'bg-indigo-600 text-white' : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
+                    filter === rating.toString() ? 'bg-[rgba(253,188,66,0.774)] text-black' : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
                   }`}
                 >
                   {rating} ★
@@ -136,10 +129,10 @@ export default function CustomerReviewPage() {
               ))}
             </div>
           </div>
-          
+
           <button
             onClick={() => setShowForm(!showForm)}
-            className="flex items-center bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-2 px-4 rounded-md"
+            className="flex items-center bg-[rgba(253,188,66,0.774)] hover:bg-[rgba(253,188,66,1)] text-black font-medium py-2 px-4 rounded-md"
           >
             <Edit3 size={18} className="mr-2" />
             {showForm ? 'Cancel' : 'Write a Review'}
@@ -163,7 +156,7 @@ export default function CustomerReviewPage() {
                   className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-2 border"
                 />
               </div>
-              
+
               <div>
                 <label htmlFor="product" className="block text-sm font-medium text-gray-700">Product Name</label>
                 <input
@@ -177,7 +170,7 @@ export default function CustomerReviewPage() {
                 />
               </div>
             </div>
-            
+
             <div className="mt-4">
               <label className="block text-sm font-medium text-gray-700 mb-1">Your Rating</label>
               <div className="flex space-x-2">
@@ -188,15 +181,15 @@ export default function CustomerReviewPage() {
                     onClick={() => handleRatingChange(rating)}
                     className="focus:outline-none"
                   >
-                    <Star 
-                      size={24} 
+                    <Star
+                      size={24}
                       className={rating <= newReview.rating ? "fill-yellow-400 text-yellow-400" : "text-gray-300"}
                     />
                   </button>
                 ))}
               </div>
             </div>
-            
+
             <div className="mt-4">
               <label htmlFor="review" className="block text-sm font-medium text-gray-700">Your Review</label>
               <textarea
@@ -210,11 +203,11 @@ export default function CustomerReviewPage() {
                 placeholder="Share your thoughts about the product..."
               />
             </div>
-            
+
             <div className="mt-6 flex justify-end">
               <button
                 onClick={handleSubmit}
-                className="ml-3 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                className="ml-3 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-black bg-[rgba(253,188,66,0.774)] hover:bg-[rgba(253,188,66,1)]"
               >
                 Submit Review
               </button>
@@ -257,9 +250,9 @@ export default function CustomerReviewPage() {
                   </div>
                   {review.image && (
                     <div className="mt-4">
-                      <img 
-                        src="images/saasa.jfif" 
-                        alt="Customer photo" 
+                      <img
+                        src="images/saasa.jfif"
+                        alt="Customer photo"
                         className="h-24 w-24 object-cover rounded-md"
                       />
                     </div>

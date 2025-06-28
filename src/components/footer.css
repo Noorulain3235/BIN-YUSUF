@@ -1,165 +1,118 @@
-.footerimg{
+.footerimg {
   margin-top: 13%;
   margin-left: 10%;
 }
-.mainf{
-    border: 2px solid black;
-    height: 500px;
-    width: 100%;
-    background-color:black;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    color: white;
-  }
-  .box1{
-    height: 180px;
-    width: 30%;
-    margin-top: 10%;
-    margin-left: 10%;
-  }
-  .imgf{
-    height: 110px;
-    width: 60%;
-    margin-left: 10%;
-  }
-  .pref{
-    height: 60px;
-    width: 65%;
-    margin-left: 10%;
-    margin-top: 2%;
-  }
-  .facebook{
-    height: 25px;
-    margin-left: 30%;
-    background-color: white;
-    height: 20px;
-    width: 4%;
+
+.mainf {
+  border: 2px solid black;
+  height: 500px;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  color: white;
 }
-  .box2{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    height: 180px;
-    width: 10%;
-    margin-top: 10%;
-    margin-left: 4%;
-  }
-  .box3{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    height: 180px;
-    width: 10%;
-    margin-top: 10%;
-    margin-left: 4%;
-  }
-  .box4{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    height: 180px;
-    width: 10%;
-    margin-top: 10%;
-    margin-left: 4%;
-  }
-  .pf1{
-    margin-top: 3%;
-    color: white;
-    text-decoration: none;
-  }
-  .pf1:hover{
-    color:rgba(253, 188, 66, 0.774);
-  }
-  .pf2{
-    color: white;
-    text-decoration: none;
-  }
-  .pf2:hover{
-    color:rgba(253, 188, 66, 0.774);
-  }
-  .pf3{
-    color: white;
-    text-decoration: none;
-  }
-  .pf3:hover{
-    color:rgba(253, 188, 66, 0.774);
-  }
-  .pf4{
-    color: white;
-    text-decoration: none;
-  }
-  .pf4:hover{
-    color:rgba(253, 188, 66, 0.774);
-  }
-  .pf5{
-    margin-top: 3%;
-    color: white;
-    text-decoration: none;
-  }
-  .pf5:hover{
-    color:rgba(253, 188, 66, 0.774);
-  }
-  .pf6{
-    color: white;
-    text-decoration: none;
-  }
-  .pf6:hover{
-    color:rgba(253, 188, 66, 0.774);
-  }
-  .pf7{
-    color: white;
-    text-decoration: none;
-  }
-  .pf7:hover{
-    color:rgba(253, 188, 66, 0.774);
-  }
-  .pf8{
-    color: white;
-    text-decoration: none;
-  }
-  .pf8:hover{
-    color:rgba(253, 188, 66, 0.774);
-  }
-  .pf9{
-    color: white;
-    text-decoration: none;
-  }
-  .pf9:hover{
-    color:rgba(253, 188, 66, 0.774);
-  }
-  .pf10{
-    color: white;
-    text-decoration: none;
-  }
-  .pf10:hover{
-    color:rgba(253, 188, 66, 0.774);
-  }
-  .pf11{
-    margin-top: 3%;
-    color: white;
-    text-decoration: none;
-  }
-  .pf11:hover{
-    color:rgba(253, 188, 66, 0.774);
-  }
-  .fl{
-    border: 2px solid rgba(253, 188, 66, 0.774) ;
-    height: 70px;
-    width: 100%;
-    background-color:rgba(253, 188, 66, 0.774) ;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    align-content: center;
-  }
-  .pfl{
-    margin-left: 3%;
-    font-size: 15px;
-    color: white;
-  }
-  .imgfl{
-    height:20px;
-    width: 10%;
-    margin-left: 40%;
-  }
+
+.box1,
+.box2,
+.box3,
+.box4 {
+  height: 180px;
+  margin-top: 10%;
+}
+
+.box1 {
+  width: 30%;
+  margin-left: 10%;
+}
+
+.box2,
+.box3,
+.box4 {
+  width: 10%;
+  margin-left: 4%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.imgf {
+  height: 110px;
+  width: 60%;
+  margin-left: 10%;
+}
+
+.pref {
+  height: 60px;
+  width: 65%;
+  margin-left: 10%;
+  margin-top: 2%;
+}
+
+.facebook {
+  height: 20px;
+  width: 4%;
+  margin-left: 30%;
+  background-color: white;
+}
+
+/* Paragraph links */
+.pf1,
+.pf2,
+.pf3,
+.pf4,
+.pf5,
+.pf6,
+.pf7,
+.pf8,
+.pf9,
+.pf10,
+.pf11 {
+  color: white;
+  text-decoration: none;
+}
+
+.pf1,
+.pf5,
+.pf11 {
+  margin-top: 3%;
+}
+
+.pf1:hover,
+.pf2:hover,
+.pf3:hover,
+.pf4:hover,
+.pf5:hover,
+.pf6:hover,
+.pf7:hover,
+.pf8:hover,
+.pf9:hover,
+.pf10:hover,
+.pf11:hover {
+  color: rgba(253, 188, 66, 0.774);
+}
+
+/* Footer Line */
+.fl {
+  border: 2px solid rgba(253, 188, 66, 0.774);
+  height: 70px;
+  width: 100%;
+  background-color: rgba(253, 188, 66, 0.774);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+}
+
+.pfl {
+  margin-left: 3%;
+  font-size: 15px;
+  color: white;
+}
+
+.imgfl {
+  height: 20px;
+  width: 10%;
+  margin-left: 40%;
+}

@@ -1,5 +1,5 @@
 .semibtnp{
-    margin-top: 10%;
+    margin-top: 5%;
     margin-left: 5%;
     height: 70px;
     width: 90%;
@@ -16,7 +16,10 @@
     font-weight: bold;
     border-radius: 0;
     margin-top: 1%;
-    margin-left: 65%;
+    margin-left: 70%;
+    text-decoration: none;
+    text-align: center;
+    align-content: center;
   }
   .buttonp:hover{
     background-color: black;
